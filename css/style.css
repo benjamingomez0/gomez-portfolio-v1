@@ -1,0 +1,132 @@
+/* element styling */
+body{
+    height: 1020px;
+    margin: 0;
+    /* margin-top: 10px; */
+    background-color: rgb(247,247,255);
+    font-size: 2rem;
+    font-family: 'PT Sans', sans-serif;
+}
+a{
+    padding: inherit;
+    text-decoration: none;
+    color: inherit; 
+}
+main {
+    margin-top: 100px;
+    position: absolute;
+}
+/* navigation bar */
+.nav-main{
+    border-bottom: 1px solid #4C8DD6;
+    position: fixed;
+    min-height:5.5rem;
+    width:100%;
+    display: flex;
+    background-color: rgba(247,247,255,.9);
+    z-index: 1;
+}
+.nav-left{
+    width:33%;
+    text-align: left;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+.nav-center{
+    width:40%;
+    text-align: center;
+    font-size: 4rem;
+}
+.nav-right{
+    width: 32%;
+    text-align: right;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+.nav-link:hover{
+    text-decoration: underline;
+    color:red;
+}
+#nav-contact{
+    margin: 10px;
+    font-size: 1rem;
+    display: none;
+}
+/*about section*/
+.about-content{
+    margin: 0 auto;
+    padding:8% 2rem 0 2rem;
+    color:rgb(247,247,255)
+}
+.about-section{
+  margin: 0 auto;
+  height:50vh;
+  width:90%;
+  background-color: #4C8DD6;
+  box-shadow: 5px 5px 5px #00000035;
+}
+
+/*skills section*/
+
+.skills-section{
+    margin: 0 auto;
+    height:50vh;
+    width:90%;
+    text-align: center;
+    padding:2rem;
+    text-decoration: underline;
+    text-decoration-color: #4C8DD6;   
+}
+.skills-container{
+    display:flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* .svg-container{
+    padding:8% 2rem 0 2rem;
+    align-content: center;
+    display:flex;
+} */
+.svg-label {
+    margin:20px;
+}
+.svg-label > h3{
+    margin: 0;
+
+}
+/*SVG*/
+svg{
+max-width: 4rem;
+max-height: 4rem;
+}
+
+/* Media Queries*/
+@media only screen and (max-width: 600px) {
+    body{font-size: 1rem;}
+    .nav-center{
+        font-size: 2rem;
+    }
+    main {
+        margin-top: 90px;
+    }
+    .nav-left{
+        font-size: 1rem;
+    }
+    .nav-right{
+        font-size: 1rem;
+    }
+    .nav-contact{
+        margin: 0;
+        font-size: .5rem;
+    }
+    .about-content{
+        margin: 0 auto;
+        padding:12% 2rem 0 2rem;
+    }
+    .about-section{
+        height:30vh;
+      }
+}
