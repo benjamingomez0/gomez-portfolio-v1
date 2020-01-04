@@ -1,6 +1,6 @@
 const contactLink = document.querySelector('#contactLink');
 let contactInfo = document.querySelector('#nav-contact')
-const toggleDisplay =()=>{  
+const toggleDisplay =()=>{ 
     if(contactInfo.style.display===""||contactInfo.style.display==="none")
     {
         contactInfo.style.display="block"
