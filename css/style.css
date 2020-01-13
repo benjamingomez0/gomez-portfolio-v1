@@ -20,7 +20,7 @@ main {
 /* navigation bar */
 
 .nav-main{
-    border-bottom: 1px solid #4C8DD6;
+    box-shadow: 3px 3px 3px rgb(86, 130, 181);
     position: fixed;
     min-height:5.5rem;
     width:100%;
@@ -55,6 +55,12 @@ main {
     margin: 10px;
     font-size: 1rem;
     display: none;
+}
+.copy-link{
+    font-size:.75rem;
+}
+.copy-link:hover{
+    background-color:red;
 }
 /*about section*/
 .about-content{
@@ -154,7 +160,12 @@ main {
     overflow: hidden;
 
 }
-
+.proj-link{
+    font-size: 1rem;
+}
+.proj-link:hover{
+    background-color:red;
+}
 /* footer */
 #footer{
     position: relative;
@@ -162,7 +173,7 @@ main {
     background-color: rgb(247,247,255);
     display:flex;
     min-height:5rem;
-    box-shadow: 0 -5px 5px -5px #00000035;
+    box-shadow: 0 -5px 5px -5px rgb(86, 130, 181); 
 }
 #footer a:hover{
     text-decoration: underline;

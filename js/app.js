@@ -14,5 +14,15 @@ const toggleDisplay =()=>{
     }
 }
 
-contactLink.onclick = toggleDisplay
+contactLink.addEventListener('click',toggleDisplay)
 
+const copiedText= document.getElementById('copy-text');
+const copier = document.getElementById('copyButton')
+console.log(copier)
+
+const copyText=() =>{
+    copiedText.select();
+    copiedText.setSelectionRange(0, 99999);
+    document.execCommand('copy');
+}
+copier.addEventListener('click',copyText);
